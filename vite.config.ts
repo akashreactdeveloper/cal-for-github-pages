@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/cal-for-github-pages/', // This should match the repository name
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
